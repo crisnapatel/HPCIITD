@@ -1,0 +1,7 @@
+# Add this in your '~/.bashrc' file
+# Replace '61' with your proxy_id
+function proxy(){
+export http_proxy="http://proxy61.iitd.ac.in:3128"
+export https_proxy="http://proxy61.iitd.ac.in:3128"
+echo "Both http and https proxy exported to 'http://proxy61.iitd.ac.in:3128'"
+}
