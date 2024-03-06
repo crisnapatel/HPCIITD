@@ -1,0 +1,4 @@
+# Add this in you ~/.bashrc file
+function internet(){
+sh $HOME/proxy.sh
+}
