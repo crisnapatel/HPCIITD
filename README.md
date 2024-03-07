@@ -10,3 +10,5 @@ All of it boils down to the following steps:
 6. Now, in one of the terminals (on the same compute node) run 'internet'
 7. in the second terminal (on the same compute node; 'ssh compute_node_id') run 'proxy'
 8. check if internet is active with 'wget google.com'
+
+If you're a first time HPC user, you may watch a simple guide at: https://www.youtube.com/watch?v=kzejE0L5Ids
