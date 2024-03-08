@@ -1,4 +1,4 @@
-# HPCIITD Accessing the internet
+# IITD HPC : Accessing the internet
 This repository aims to share proxy.sh script that IIT Delhi HPC users may need to access the internet.
 All of it boils down to the following steps:
 1. Connect to HPC (ssh userid@hpc.iitd.ac.in)
