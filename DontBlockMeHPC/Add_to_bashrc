@@ -1,0 +1,17 @@
+# Check if the CPU monitoring script is already running
+if ! pgrep -f "\.DontBlockMeHPC" > /dev/null; then
+    # Start CPU usage monitor in the background
+    ~/.DontBlockMeHPC.sh &
+fi
+
+# Store the PID of the background process
+CPU_MONITOR_PID=$!
+
+# Define a function to kill the background process
+cleanup() {
+    echo "Terminating CPU usage monitor (PID: $CPU_MONITOR_PID)"
+    kill $CPU_MONITOR_PID
+}
+
+# Set a trap to call the cleanup function when the shell exits
+trap cleanup EXIT
