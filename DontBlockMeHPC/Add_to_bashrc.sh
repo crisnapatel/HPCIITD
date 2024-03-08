@@ -5,16 +5,12 @@
 
     # Store the PID of the background process to kill later
     CPU_MONITOR_PID=$!
-
-    # Define a function to kill the background process
     cleanup() {
         echo "Terminating CPU usage monitor (PID: $CPU_MONITOR_PID)"
         kill $CPU_MONITOR_PID
     }
 
-    # Set a trap to call the cleanup function when the subshell exits
     trap cleanup EXIT
 
-    # Wait for the background process to finish (this will block the subshell)
     wait $CPU_MONITOR_PID
 ) &
