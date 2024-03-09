@@ -4,7 +4,7 @@
 
 monitor_cpu_usage() {
     local threshold=50 # max cpu usage allowed
-    local duration=25 # for t seconds
+    local duration=60 # for t seconds
     local interval=1
     local user=$(whoami)
 
