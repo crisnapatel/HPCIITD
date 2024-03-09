@@ -17,7 +17,7 @@ monitor_cpu_usage() {
             # Check if the process has been running for more than the duration
             local start_time=$(ps -p "$pid" -o etimes= | tr -d ' ')
 	    if [ $((start_time % 10)) -eq 0 ]; then
-    		echo "PID: $pid, Start time: $start_time seconds"
+    		echo "PID: $pid, CPU-hungry Start time: $start_time seconds"
 	    fi
 
             if [ "$start_time" -ge "$duration" ]; then
