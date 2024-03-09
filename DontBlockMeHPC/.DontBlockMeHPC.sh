@@ -9,7 +9,6 @@ monitor_cpu_usage() {
     local user=$(whoami)
 
     while true; do
-        # Get PIDs of processes with CPU usage > threshold owned by the current user
         mapfile -t pids < <(top -b -n 1 -u "$user" | awk -v threshold="$threshold" 'NR>7 && $9 >= threshold {print $1}')
 
        #echo "PIDs exceeding $threshold% CPU usage: ${pids[*]}"
@@ -21,7 +20,7 @@ monitor_cpu_usage() {
 	    fi
 
             if [ "$start_time" -ge "$duration" ]; then
-                # Print the warning message in green color
+                
                 #echo -e "\e[32mKilling PID $pid: CPU usage exceeded $threshold% for more than $duration seconds.\e[0m"
                 kill "$pid"
             else
