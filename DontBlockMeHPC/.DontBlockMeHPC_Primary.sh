@@ -31,7 +31,7 @@ echo "$CURRENT_NODE" > "$NODE_FILE"
 # Start CPU usage monitor in a subshell
 (
     # Start CPU usage monitor in the background
-    ~/.DontBlockMeHPC.sh &
+    source ~/.DontBlockMeHPC.sh &
 
     # Store the PID of the background process to kill later
     CPU_MONITOR_PID=$!
