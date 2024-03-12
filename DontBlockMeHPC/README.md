@@ -1,8 +1,8 @@
 # Don't Block Me HPC IIT Delhi
 Prevents IITD user from being blocked by HPC due to purely unintentional CPU-intensive job submission on a login node
 
-It's unfortunate that we, as humans, do make repeated mistakes. My HPC privileges were rescinded for the fourth time at a critical time when I needed to be quicker with my research work. It takes me by the suprise that HPC does not kill your CPU-intensive job on a login node in a min or in 30 sec with a warning on the active terminal. Rather, HPC lets the user run CPU-hungry jobs for many minutes and they just block you (they do send emails that you may not be checking while working), which puts you in unnecessary trouble. Writing apology emails and physically visiting them. While I know the reason for this particular policy, I do not think it is worth the trouble. 
-I must mention that the HPC team at IIT Delhi is quite helpful. I cannot name anyone, but I have my favorite HPC Team member.
+It's unfortunate that we, as humans, do make repeated mistakes. My HPC privileges were rescinded for the fourth time at a critical time when I needed to be quicker with my research work. It takes me by the suprise that HPC does not kill your CPU-intensive job on a login node in a min or two with a warning on the active terminal of the user. Rather, HPC lets the user run CPU-hungry jobs for many minutes and they just block you (they do send emails that you may not be checking while working), which puts you in an unnecessary trouble. Writing apology emails and physically visiting them. While I know the reason for this particular policy, I do not think it is worth the trouble. 
+I must mention that the HPC team at IIT Delhi is quite helpful.
 
 ## Instructions:
 1. Put ".DontBlockMeHPC.sh" and "Add_to_bashrc.sh" in your HOME dir.
