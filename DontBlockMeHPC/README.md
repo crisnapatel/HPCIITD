@@ -6,7 +6,7 @@ We must mention that the HPC team at IIT Delhi is quite helpful.
 
 ## Instructions:
 1. Put ".DontBlockMeHPC.sh" and "Add_to_bashrc.sh" in your HOME directory.
-2. add "source $HOME/Add_to_bashrc.sh" in your bashrc file
+2. add "source $HOME/.DontBlockMeHPC_Primary.sh" in your bashrc file
 3. Source your bashrc file ("source ~/.bashrc") or simply close and reopen the terminal.
 
 ## You may want to keep in mind:
