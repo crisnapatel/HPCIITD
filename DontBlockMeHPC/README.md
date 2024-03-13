@@ -6,11 +6,10 @@ We must mention that the HPC team at IIT Delhi is quite helpful.
 
 ## Instructions:
 1. Put ".DontBlockMeHPC.sh", ".DontBlockMeHPC_Primary.sh" and ".sourceme.sh" in your HOME directory.
-2. add "source $HOME/.sourceme.sh" in your bashrc file
+2. Copy content from "add_to_bashrc.sh" file and paste it at the end of your bashrc file.
 3. Source your bashrc file ("source ~/.bashrc") or simply close and reopen the terminal.
    If you're still unsure how to do it, https://www.youtube.com/watch?v=eu9Z1jan6RE
-4. CAUTION: The script will prevent file transfer via login nodes (you can still do that from compute node). For that you must comment the "source ~/.sourceme.sh" line in your bashrc and then do the scp.
-
+   
 ## You may want to keep in mind:
 1. This is only an attempt to kill CPU-hungry jobs on the login[01-04] nodes.
 2. It tries to kill all processes (not necessarily subprocesses spawned by programs like GNU parallel for instance).
