@@ -18,3 +18,6 @@ We must mention that the HPC team at IIT Delhi is quite helpful.
 6. You can control the maximum allowed CPU usage (in %) and time (in sec) before a job should be killed. For that, adjust the 'duration' and 'threshold' vars in the .DontBlockMeHPC.sh file. It is advised to keep 'duration'<60 and 'threshold'>50%.
 7. This script does not prvent you from being blocked if you submit a job on the login nodes using gatways. For instance, you can submit Materials Studio (MS) jobs to the login nodes (if your pbs.cfg has--> params=  -l place=free -l select={int(%n%/%t%+0.99)}:ncpus=%t%) and get your HPC account blocked. For the case of MS your pbs.cfg file should contain "params = -l select={int(%n%/24+0.99)}:ncpus=%n%:mpiprocs=%n%:centos=skylake -P project_id -l software=MS -l walltime=01:00:00" or something similar.
 8. We have tried it with many cases that we could imagine and it works fine. If you find any problem, please report it. We must declare that the usage of this protocol should be at the users' discretion and risk.
+
+### Other contributors:
+https://github.com/vikast282
