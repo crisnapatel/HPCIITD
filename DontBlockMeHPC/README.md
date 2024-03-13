@@ -5,7 +5,7 @@ It's unfortunate that we, as humans, do make repeated mistakes. My HPC privilege
 We must mention that the HPC team at IIT Delhi is quite helpful.
 
 ## Instructions:
-1. Put ".DontBlockMeHPC.sh", ".DontBlockMeHPC_Primary.sh" and ".sourceme.sh" in your HOME directory.
+1. Put ".DontBlockMeHPC.sh", ".DontBlockMeHPC_Primary.sh", ".kill_DontBlockMeHPC.sh", and ".sourceme.sh" in your HOME directory.
 2. Copy content from "add_to_bashrc.sh" file and paste it at the end of your bashrc file.
 3. Source your bashrc file ("source ~/.bashrc") or simply close and reopen the terminal.
    If you're still unsure how to do it, https://www.youtube.com/watch?v=eu9Z1jan6RE
