@@ -15,7 +15,7 @@ if [[ $current_hostname =~ ^(login(0[1-4])|klogin(0[1-4]))$ ]]; then
     if pgrep -x -u $USER "$process_name" > /dev/null; then
         echo "$process_name is already running on $current_hostname, skipping $source_file"
     else
-            source ~/.DontBlockMeHPC_Primary.sh
+            $source_file &
         echo "Executed $source_file on $current_hostname"
     fi
 fi
