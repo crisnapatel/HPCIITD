@@ -18,3 +18,4 @@ if [[ $current_hostname =~ ^(login(0[1-4])|klogin(0[1-4]))$ ]]; then
             source ~/.DontBlockMeHPC_Primary.sh
         echo "Executed $source_file on $current_hostname"
     fi
+fi
