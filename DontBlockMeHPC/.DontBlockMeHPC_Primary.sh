@@ -18,4 +18,4 @@
 ) &
 
 # Example: Wait for user input before exiting
-read -p "Press Enter to exit..."
+read -p "Press Enter to continue..."
