@@ -8,7 +8,6 @@ We must mention that the HPC team at IIT Delhi is quite helpful.
 1. Put ".DontBlockMeHPC.sh", ".kill_DontBlockMeHPC.sh", and ".sourceme.sh" in your HOME directory.
 2. Copy content from "add_to_bashrc.sh" file and paste it at the end of your bashrc file.
 3. Source your bashrc file ("source ~/.bashrc") or simply close and reopen the terminal.
-   If you're still unsure how to do it, https://www.youtube.com/watch?v=eu9Z1jan6RE
    
 ## You may want to keep in mind:
 1. This is only an attempt to kill CPU-hungry jobs on the login[01-04] nodes.
