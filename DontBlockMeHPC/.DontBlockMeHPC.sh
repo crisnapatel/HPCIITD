@@ -34,8 +34,8 @@ monitor_cpu_usage() {
 
 
 # as of 8 March 2024 HPC at IIT Delhi has four login nodes.
-# Please edit the if condition if changes needed.
-if [[ $(hostname) =~ login0[1-4] ]]; then
+# Please edit the if condition if changes needed. (login(0[1-4])|klogin(0[1-4]))
+if [[ $(hostname) =~ (login(0[1-4])|klogin(0[1-4])) ]]; then
     #echo "Starting CPU usage monitor on login node."
      monitor_cpu_usage
 else
